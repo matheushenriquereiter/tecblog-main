@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecBlog - o seu blog de Tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  </head>
+  <body>
+    <div id="area-cabecalho">
+      <div id="area-logo">
+        <h1>Tec<span class="branco">Blog</span></h1>
+      </div>
+      <div id="area-menu">
+        <a class="top-nav" href="index.html">Home</a>
+        <a class="top-nav" href="jogos.html">Jogos</a>
+        <a class="top-nav" href="celulares.html">Celulares</a>
+        <a class="top-nav" href="informatica.html">Informática</a>
+        <a class="top-nav" href="eletronicos.html">Eletrônicos</a>
+      </div>
+      <!-- <div> -->
+    </div>
+    <div id="area-principal">
+      <div id="area-postagens">
+        <!--abertura postagem-->
+        <div class="postagem">
+          <h2>Os três melhores notebooks da nova geração</h2>
+          <span>postado em 19 de setembro</span>
+          <img
+            width="620px"
+            src="https://super.abril.com.br/wp-content/uploads/2023/09/SI_455_Notebook_site-01.jpg?quality=70&strip=info&w=720&h=440&crop=1"
+            alt=""
+          />
+          <p>
+            A família Dell Alienware m16 R1 é a linha de alto desempenho da
+            fabricante, trazendo os novos processadores Intel Core de 13ª
+            geração e as placas de vídeo Nvidia GeForce RTX série 40. O
+            AW16-i1300-M16P vem equipado com o processador Intel Core
+            i9-13900HX, memória RAM de 16 GB 4800 MHz e armazenamento SSD de 1
+            TB. A placa de vídeo dedicada é a poderosa NVIDIA GeForce RTX 4060
+            com 8 GB GDDR6. O sistema operacional é o Windows 11 Home. Esse
+            notebook é recomendado para quem quer rodar ganes atuais com tudo no
+            ultra a altas taxas de FPS, como Starfield, Cyberpunk 2077, RE 4
+            Remake e Palworld nessa maquina. Também é perfeito para trabalhos
+            como edição de vídeo em 4K, renderização e edição de projetos 3D no
+            AutoCAD e Revit.
+          </p>
+
+          <p style="display: none" data-js="paragraph">
+            O Macbook Apple Macbook Air MLY13BZ/A Apple M2 13,6" 8GB SSD 256 GB
+            Mac OS Leitor Biométrico, da Apple, conta com o sistema operacional
+            Mac OS. Quanto às dimensões, o MLY13BZ/A tem 30.4cm de largura,
+            21.5cm de profundidade e 1.13cm de altura, pesando 1.24kg. No
+            quesito desempenho, o laptop Apple vem com o processador Apple M2 e
+            uma memória RAM de 8.0GB. O SSD de 256.0GB é o componente
+            responsável pelo armazenamento interno do Apple MLY13BZ/A. A placa
+            de vídeo é integrada ao Apple M2, mas a potência do processador
+            Apple garante ótimo desempenho de processamento gráfico.O notebook
+            Apple tem conexão sem fio por Wi-Fi (2.4 GHz e 5.0 GHz), Wi-Fi (6.0
+            GHz), Bluetooth para internet e para acessórios wireless. Além
+            disso, ele tem entradas Thunderbolt 4, Áudio. O macOS é o sistema
+            operacional para computadores mais avançado do mundo. E o macOS
+            Sonoma traz ainda mais poder para você trabalhar e se divertir, com
+            novas formas de ganhar visibilidade em videoconferências, acelerar o
+            desempenho em jogos e deixar seu Mac mais personalizado. O Galaxy
+            Book 3 360 é a terceira geração do notebook 2 em 1 da Samsung. Ele
+            traz algumas novidades para a linha, mas sem grandes destaques. Seu
+            principal diferencial é a possibilidade de virar a tela em 360 graus
+            e se tornar um tablet. Isso traz algumas praticidades para o
+            dia-a-dia, evitando a necessidade de um segundo aparelho portátil
+            como tablet para processos produtivos e de trabalho. Assim, temos
+            uma tela de 13 polegadas AMOLED com alta taxa de atualização e
+            sensível a toque. Para escolha do processador, temos várias opções,
+            indo até o Intel Core i7, juntamente a uma placa gráfica Intel Iris
+            Xe. Por outro lado, no armazenamento, este aparelho oferece até 1 TB
+            em SSD e até 16 GB de memória RAM. Por fim, entre suas conexões
+            físicas, temos uma entrada HDMI, um leitor de cartão MicroSD e
+            portas Thunderbolt, USB-A e USB-C.
+          </p>
+          <a id="leia">Leia Mais</a>
+        </div>
+        <!--fechamento da postagem-->
+      </div>
+
+      <nav id="area-lateral">
+        <ul>
+          <li>
+            <a class="side-nav" href="index.html">Home</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="jogos.html">Jogos</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="celulares.html">Celulares</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="informatica.html">Informática</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="eletronicos.html">Eletrônicos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="rodape">Todos os direitos reservados</div>
+
+    <script>
+      const leia = document.querySelector("#leia");
+      const p = document.querySelector("[data-js='paragraph']");
+
+      leia.addEventListener("click", () => {
+        if (p.style.display === "none") {
+          p.style.display = "block";
+          leia.textContent = "Mostrar menos";
+          return;
+        }
+
+        p.style.display = "none";
+        leia.textContent = "Leia mais";
+      });
+    </script>
+  </body>
+</html>

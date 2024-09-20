@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecBlog - o seu blog de Tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  </head>
+  <body>
+    <div id="area-cabecalho">
+      <div id="area-logo">
+        <h1>Tec<span class="branco">Blog</span></h1>
+      </div>
+      <div id="area-menu">
+        <a class="top-nav" href="index.html">Home</a>
+        <a class="top-nav" href="jogos.html">Jogos</a>
+        <a class="top-nav" href="celulares.html">Celulares</a>
+        <a class="top-nav" href="informatica.html">Informática</a>
+        <a class="top-nav" href="eletronicos.html">Eletrônicos</a>
+      </div>
+      <!-- <div> -->
+    </div>
+    <div id="area-principal">
+      <div id="area-postagens">
+        <!--abertura postagem-->
+        <div class="postagem">
+          <h2>Segurança da informação</h2>
+          <span>postado em 19 de setembro</span>
+          <img
+            width="620px"
+            src="https://battecnologia.com/site/wp-content/uploads/2022/07/seguranca-da-informacao.jpg"
+            alt=""
+          />
+          <p>
+            Segurança da informação é uma série de ações adotadas
+            estrategicamente para controlar e evitar riscos de roubo, danos e
+            perdas dos dados, dispositivos, servidores, sistemas e redes. Sua
+            função é identificar, registrar e combater as ameaças que surgem no
+            meio do caminho. As práticas de proteção da informação envolvem a
+            definição de um conjunto de processos realizados de maneira
+            sincronizada para blindar os ativos virtuais e físicos relacionados
+            à informação, independentemente de como eles são editados,
+            compartilhados (enviados e recebidos), processados ou arquivados.
+          </p>
+
+          <p style="display: none" data-js="paragraph">
+            Essa modalidade de segurança é desafiadora e exige cuidados
+            específicos, ao mesmo tempo em que exige um gerenciamento de nível
+            superior. Entretanto, como muitos procedimentos que parecem rígidos
+            inicialmente, ele é dividido por etapas, facilitando sua
+            implementação. Um bom resultado só é obtido por meio da gestão de
+            riscos nessas várias etapas, pois detecta ativos, vulnerabilidades,
+            fontes de ameaças, formas de controles e possíveis impactos das
+            ações executadas.
+          </p>
+          <a id="leia">Leia Mais</a>
+        </div>
+        <!--fechamento da postagem-->
+      </div>
+
+      <nav id="area-lateral">
+        <ul>
+          <li>
+            <a class="side-nav" href="index.html">Home</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="jogos.html">Jogos</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="celulares.html">Celulares</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="informatica.html">Informática</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="eletronicos.html">Eletrônicos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="rodape">Todos os direitos reservados</div>
+
+    <script>
+      const leia = document.querySelector("#leia");
+      const p = document.querySelector("[data-js='paragraph']");
+
+      leia.addEventListener("click", () => {
+        if (p.style.display === "none") {
+          p.style.display = "block";
+          leia.textContent = "Mostrar menos";
+          return;
+        }
+
+        p.style.display = "none";
+        leia.textContent = "Leia mais";
+      });
+    </script>
+  </body>
+</html>

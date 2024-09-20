@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecBlog - o seu blog de Tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  </head>
+  <body>
+    <div id="area-cabecalho">
+      <div id="area-logo">
+        <h1>Tec<span class="branco">Blog</span></h1>
+      </div>
+      <div id="area-menu">
+        <a class="top-nav" href="index.html">Home</a>
+        <a class="top-nav" href="jogos.html">Jogos</a>
+        <a class="top-nav" href="celulares.html">Celulares</a>
+        <a class="top-nav" href="informatica.html">Informática</a>
+        <a class="top-nav" href="eletronicos.html">Eletrônicos</a>
+      </div>
+      <!-- <div> -->
+    </div>
+    <div id="area-principal">
+      <div id="area-postagens">
+        <!--abertura postagem-->
+        <div class="postagem">
+          <h2>Inteligência Artificial</h2>
+          <span>postado em 19 de setembro</span>
+          <img
+            width="620px"
+            src="https://weni.ai/wp-content/uploads/2017/05/PostCases-Imagem-768x354.jpg.webp"
+            alt=""
+          />
+          <p>
+            A história da inteligência artificial (IA) começa na década de 1950,
+            com os primeiros conceitos teóricos e experimentos. Alan Turing
+            propõe o Teste de Turing como forma de medir a inteligência das
+            máquinas. O termo "inteligência artificial" é usado pela primeira
+            vez em 1956 na Conferência de Dartmouth. Além disso, há
+            desenvolvimento de programas que jogam xadrez e resolvem problemas
+            matemáticos. As IAs são baseadas em regras e lógica. No ano de 1980,
+            surge o aprendizado de máquina, com o uso de redes neurais e
+            sistemas especialistas. Ao decorer dos anos, houve um aumento no uso
+            de big data e poder computacional. Aplicações de IA começam a se
+            popularizar em várias indústrias.
+          </p>
+
+          <p style="display: none" data-js="paragraph">
+            A história da inteligência artificial (IA) começa na década de 1950,
+            com os primeiros conceitos teóricos e experimentos. Alan Turing
+            propõe o Teste de Turing como forma de medir a inteligência das
+            máquinas. O termo "inteligência artificial" é usado pela primeira
+            vez em 1956 na Conferência de Dartmouth. Além disso, há
+            desenvolvimento de programas que jogam xadrez e resolvem problemas
+            matemáticos. As IAs são baseadas em regras e lógica. No ano de 1980,
+            surge o aprendizado de máquina, com o uso de redes neurais e
+            sistemas especialistas. Ao decorer dos anos, houve um aumento no uso
+            de big data e poder computacional. Aplicações de IA começam a se
+            popularizar em várias indústrias.
+          </p>
+          <a id="leia">Leia Mais</a>
+        </div>
+        <!--fechamento da postagem-->
+      </div>
+
+      <nav id="area-lateral">
+        <ul>
+          <li>
+            <a class="side-nav" href="index.html">Home</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="jogos.html">Jogos</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="celulares.html">Celulares</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="informatica.html">Informática</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="eletronicos.html">Eletrônicos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="rodape">Todos os direitos reservados</div>
+
+    <script>
+      const leia = document.querySelector("#leia");
+      const p = document.querySelector("[data-js='paragraph']");
+
+      leia.addEventListener("click", () => {
+        if (p.style.display === "none") {
+          p.style.display = "block";
+          leia.textContent = "Mostrar menos";
+          return;
+        }
+
+        p.style.display = "none";
+        leia.textContent = "Leia mais";
+      });
+    </script>
+  </body>
+</html>

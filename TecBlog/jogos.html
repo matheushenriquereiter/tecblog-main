@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecBlog - o seu blog de Tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  </head>
+  <body>
+    <div id="area-cabecalho">
+      <div id="area-logo">
+        <h1>Tec<span class="branco">Blog</span></h1>
+      </div>
+      <div id="area-menu">
+        <a class="top-nav" href="index.html">Home</a>
+        <a class="top-nav" href="jogos.html">Jogos</a>
+        <a class="top-nav" href="celulares.html">Celulares</a>
+        <a class="top-nav" href="informatica.html">Informática</a>
+        <a class="top-nav" href="eletronicos.html">Eletrônicos</a>
+      </div>
+      <!-- <div> -->
+    </div>
+    <div id="area-principal">
+      <div id="area-postagens">
+        <!--abertura postagem-->
+        <div class="postagem">
+          <h2>Clash Royale</h2>
+          <span>postado em 19 de setembro</span>
+          <img
+            width="620px"
+            src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg"
+            alt=""
+          />
+          <p>
+            Clash Royale é um jogo de estratégia em tempo real desenvolvido pela
+            Supercell, lançado em 2016. Ele combina elementos de jogos de cartas
+            colecionáveis e defesa de torres. Os jogadores duelam em partidas
+            1v1 ou 2v2, usando um deck de 8 cartas que representam tropas,
+            feitiços e construções. O objetivo é destruir as torres do oponente
+            enquanto gerencia o elixir, um recurso necessário para jogar cartas.
+          </p>
+          <p style="display: none" data-js="paragraph">
+            O jogo apresenta diferentes modos, como partidas rápidas, desafios e
+            eventos especiais. Os jogadores também podem se juntar a clãs para
+            socializar e competir. Com uma forte comunidade e um cenário
+            competitivo, Clash Royale é conhecido por sua jogabilidade acessível
+            e profunda, atraindo milhões de jogadores ao redor do mundo.
+          </p>
+          <a id="leia">Leia Mais</a>
+        </div>
+        <!--fechamento da postagem-->
+      </div>
+
+      <nav id="area-lateral">
+        <ul>
+          <li>
+            <a class="side-nav" href="index.html">Home</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="jogos.html">Jogos</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="celulares.html">Celulares</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="informatica.html">Informática</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="eletronicos.html">Eletrônicos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="rodape">Todos os direitos reservados</div>
+
+    <script>
+      const leia = document.querySelector("#leia");
+      const p = document.querySelector("[data-js='paragraph']");
+
+      leia.addEventListener("click", () => {
+        if (p.style.display === "none") {
+          p.style.display = "block";
+          leia.textContent = "Mostrar menos";
+          return;
+        }
+
+        p.style.display = "none";
+        leia.textContent = "Leia mais";
+      });
+    </script>
+  </body>
+</html>

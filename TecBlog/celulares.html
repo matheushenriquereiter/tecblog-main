@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecBlog - o seu blog de Tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  </head>
+  <body>
+    <div id="area-cabecalho">
+      <div id="area-logo">
+        <h1>Tec<span class="branco">Blog</span></h1>
+      </div>
+      <div id="area-menu">
+        <a class="top-nav" href="index.html">Home</a>
+        <a class="top-nav" href="jogos.html">Jogos</a>
+        <a class="top-nav" href="celulares.html">Celulares</a>
+        <a class="top-nav" href="informatica.html">Informática</a>
+        <a class="top-nav" href="eletronicos.html">Eletrônicos</a>
+      </div>
+      <!-- <div> -->
+    </div>
+    <div id="area-principal">
+      <div id="area-postagens">
+        <!--abertura postagem-->
+        <div class="postagem">
+          <h2>Apple e Samsung</h2>
+          <span>postado em 19 de setembro</span>
+          <img
+            width="620px"
+            src="https://img.odcdn.com.br/wp-content/uploads/2024/04/Destaque-iPhone-da-Apple-e-Samsung-Galaxy.jpg"
+            alt=""
+          />
+          <p>
+            A principal diferença entre as duas marcas é o sistema operacional,
+            a Samsung usa o Android e a Apple usa seu próprio sistema o IOS. O
+            sistema da Apple permite ter uma comunicação mais rápida entre
+            hardware e software, porém vem como desvantagem a integração e
+            comunicação com outros eletrônicos como tvs, carros e muitos outros
+            aparelhos do nosso dia a dia. Também trago a questão da segurança
+            que pelo fato do Android ser um sistema aberto facilita desenvolver
+            aplicações má intencionadas enquanto o IOS tem um certo sigilo sobre
+            o seu desenvolvimento.
+          </p>
+
+          <p style="display: none" data-js="paragraph">
+            A Proposta da Samsung é atender a todos os públicos com diversos
+            aparelhos celulares em várias versões e preços sendo lançados o ano
+            todo e um portifólio de produtos gigantesco que vai de
+            eletrodomésticos a relógios inteligentes. A Apple tem seu
+            público-alvo muito bem definido com custo acima do valor de mercado,
+            principalmente em países como o Brasil com altos impostos deixando o
+            Lançamento sempre para os usuários com poder aquisitivo elevado e os
+            aparelhos mais antigos para quem não pode comprar os lançamentos.
+          </p>
+          <a id="leia">Leia Mais</a>
+        </div>
+        <!--fechamento da postagem-->
+      </div>
+
+      <nav id="area-lateral">
+        <ul>
+          <li>
+            <a class="side-nav" href="index.html">Home</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="jogos.html">Jogos</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="celulares.html">Celulares</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="informatica.html">Informática</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="side-nav" href="eletronicos.html">Eletrônicos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="rodape">Todos os direitos reservados</div>
+
+    <script>
+      const leia = document.querySelector("#leia");
+      const p = document.querySelector("[data-js='paragraph']");
+
+      leia.addEventListener("click", () => {
+        if (p.style.display === "none") {
+          p.style.display = "block";
+          leia.textContent = "Mostrar menos";
+          return;
+        }
+
+        p.style.display = "none";
+        leia.textContent = "Leia mais";
+      });
+    </script>
+  </body>
+</html>
